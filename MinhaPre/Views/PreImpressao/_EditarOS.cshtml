@@ -1,0 +1,201 @@
+﻿@model OS
+<div id="boxFormulario">
+    <section class="container animated bounceInLeft">
+        <div class="row">
+
+            <div class="col-xs-12">
+                <h1><span class="icone-fonte"></span> Alterar dados da  OS</h1>
+                <a data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#dados" href="~/PreImpressao/Lista">
+                    <p id="FechaRetorno" class="icone-fonte"></p>
+                </a>
+            </div>
+
+            <form class="form" action="~/PreImpressao/EditarOS" data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#retorno" id="formEditarOS" method="post">
+                <input type="hidden" name="IdOS" value="@Model.IdOS" />
+
+                <div class="col-sm-3 col-xs-12 formCampo">
+                    <input data-val="true" data-val-required="Obrigatório" name="Numero" type="number" value="@Model.Numero" />
+                    <span class="field-validation-valid mensagem-erro" data-valmsg-for="Numero" data-valmsg-replace="true"></span>
+                </div>
+
+                <div class="col-sm-6 col-xs-12 formCampo">
+                    <input data-val="true" data-val-required="Obrigatório" name="Cliente" type="text" value="@Model.Cliente" placeholder="Cliente" />
+                    <span class="field-validation-valid mensagem-erro" data-valmsg-for="Cliente" data-valmsg-replace="true"></span>
+                </div>
+
+                <div class="col-sm-3 col-xs-12 formCampo">
+                    <input type="hidden" name="EstatusOrcamentoJaSalvo" value="@Model.EstatusOrcamento" />
+                    <select data-val="true" data-val-required="Obrigatório" name="EstatusOrcamento">
+                        @{
+                            if (Model.EstatusOrcamento == "")
+                            {
+                                <option value="">Estatus Orçamento</option>
+                                <option value="OK">OK</option>
+                                <option value="Divergente">Divergente</option>
+                            }
+                            if (Model.EstatusOrcamento == "OK")
+                            {
+                                <option value="@Model.EstatusOrcamento">@Model.EstatusOrcamento</option>
+                                <option value="Divergente">Divergente</option>
+                            }
+                            if (Model.EstatusOrcamento == "Divergente")
+                            {
+                                <option value="@Model.EstatusOrcamento">@Model.EstatusOrcamento</option>
+                                <option value="OK">OK</option>
+                            }
+                        }
+                    </select>
+                    <span class="field-validation-valid mensagem-erro" data-valmsg-for="EstatusOrcamento" data-valmsg-replace="true"></span>
+                </div>
+
+                <div class="col-sm-4 col-xs-12 formCampo">
+                    <select data-val="true" data-val-required="Obrigatório" name="IdMaterialTipo" placeholder="Breve Descrição Material">
+                        @{
+
+                            if (Model.IdMaterialTipo <= 1)
+                            {
+                                <option value="">Tipo Material</option>
+
+                                foreach (var item in ViewBag.MaterialTipoLista)
+                                {
+                                    if (item.Id > 1)
+                                    {
+                                        <option value="@item.Id">@item.Material</option>
+                                    }
+
+                                }
+                            }
+                            if (Model.IdMaterialTipo > 1)
+                            {
+                                <option value="@Model.IdMaterialTipo">@Model.MaterialTipo</option>
+
+                                foreach (var item in ViewBag.MaterialTipoLista)
+                                {
+                                    if (item.Id > 1)
+                                    {
+                                        <option value="@item.Id">@item.Material</option>
+                                    }
+                                }
+                            }
+
+                        }
+                    </select>
+                    <span class="field-validation-valid mensagem-erro" data-valmsg-for="IdMaterialTipo" data-valmsg-replace="true"></span>
+                </div>
+
+                <div class="col-sm-4 col-xs-12 formCampo">
+                    <input data-val="true" data-val-required="Obrigatório" name="Material" type="text" value="@Model.Material" placeholder="Breve Descrição Material" />
+                    <span class="field-validation-valid mensagem-erro" data-valmsg-for="Material" data-valmsg-replace="true"></span>
+                </div>
+
+                <div class="col-sm-4 col-xs-12 formCampo">
+                    @{
+                        if (Model.PrazoData == null || Model.PrazoData == "")
+                        {
+                            <input class="mask-prazo-data" id="PrazoData" name="PrazoData" type="text" value="" placeholder="Prazo | Data" />
+                        }
+                        else
+                        {
+                            <input class="mask-prazo-data" id="PrazoData" name="PrazoData" type="text" value="@Model.PrazoData"/>
+                        }
+                    }
+
+                </div>
+
+                <div class="col-xs-12 formCampo">
+                    <textarea name="Observacao" placeholder="OBSERVAÇÃO">@Model.Observacao</textarea>
+                </div>
+
+                <div class="col-sm-6 col-xs-12 formCampo">
+                    <input type="text" value="@Model.Prova" readonly name="Prova" />
+                </div>
+
+                <div class="col-sm-6 col-xs-12 formCampo">
+                    <input type="text" value="@Model.Impressora" readonly name="Impressora" />
+                </div>
+
+                <div class="col-sm-6 col-xs-12 formCampo">
+                    <fieldset>
+                        <legend><span class="icone-fonte"></span> Aprovação</legend>
+
+                        <div class="col-xs-4 formCheckBox">
+                            <input type="radio" id="FÍSICA" name="Provas[]" value="FÍSICA" Text="FÍSICA">
+                            <label for="FÍSICA">FÍSICA</label>
+                        </div>
+
+                        <div class="col-xs-4 formCheckBox">
+                            <input type="radio" id="VIRTUAL" name="Provas[]" value="VIRTUAL">
+                            <label for="VIRTUAL">VIRTUAL</label>
+                        </div>
+
+                        <div class="col-xs-4 formCheckBox">
+                            <input type="radio" id="DIRETO" name="Provas[]" value="DIRETO">
+                            <label for="DIRETO">DIRETO</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="col-sm-6 col-xs-12 formCampo">
+                    <fieldset>
+                        <legend><span class="icone-fonte"></span> Impressoras</legend>
+
+                        <div class="col-xs-4 col-xs-6 formCheckBox">
+                            <input type="checkbox" id="SM 5" name="Impressoras[]" value="SM 5" Text="SM 5">
+                            <label for="SM 5">SM 5</label>
+                        </div>
+
+                        <div class="col-xs-4 col-xs-6 formCheckBox">
+                            <input type="checkbox" id="SM 1" name="Impressoras[]" value="SM 1">
+                            <label for="SM 1">SM 1</label>
+                        </div>
+
+                        <div class="col-xs-4 col-xs-6 formCheckBox">
+                            <input type="checkbox" id="R300" name="Impressoras[]" value="R300">
+                            <label for="R300">R300</label>
+                        </div>
+
+                        <div class="col-xs-4 col-xs-6 formCheckBox">
+                            <input type="checkbox" id="RIOBY" name="Impressoras[]" value="RIOBY">
+                            <label for="RIOBY">RIOBY</label>
+                        </div>
+
+                        <div class="col-xs-4 col-xs-6 formCheckBox">
+                            <input type="checkbox" id="DIGITAL" name="Impressoras[]" value="DIGITAL">
+                            <label for="DIGITAL">DIGITAL</label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="col-xs-12 formCampo">
+                    <input id="BtnDeletar" type="button" value="DELETAR" class="btn" style="margin-bottom:15px" />
+                    <input type="submit" value="SALVAR" class="btn" />
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+<section id="BoxAviso" style="display:none;">
+    <div>
+        <img src="~/Imagens/LOGO-ATENCAO.png" alt="IMG" />
+        <h5>ATENÇÃO!</h5>
+        <br />
+        <p>Todas informações dessa OS serão excluidas definitivamente, deseja continuar?</p>
+        <br />
+        <a data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#dados" href="~/PreImpressao/DeletarOS?IdOS=@Model.IdOS">
+            <input class="btn" type="button" value="SIM">
+        </a>
+        <input id="btn-FecharPainelAviso" class="btn" type="button" value="NÃO">
+    </div>
+</section>
+<section id="telaFundo"></section>
+<script type="text/javascript">
+    $('#Erro input').on('click', FecharJanelaErro);
+</script>
+<script type="text/javascript">
+    fecharTelaProcess();
+    mascarasTextos();
+    jQuery.validator.unobtrusive.parse();
+    jQuery.validator.unobtrusive.parse("#formEditarOS");
+    $('#BtnDeletar').on('click', AbrirJanelaAviso);
+    $('#btn-FecharPainelAviso').on('click', FecharJanelaAviso);
+</script>

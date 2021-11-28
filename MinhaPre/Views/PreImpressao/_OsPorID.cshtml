@@ -1,0 +1,47 @@
+﻿@model OS
+<div id="boxRetornoPadrao">
+    <section class="container animated bounceInLeft">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1><span class="icone-fonte"></span> Detalhamento OS</h1>
+                <a data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#dados" href="~/PreImpressao/Lista">
+                    <p id="FechaRetorno" class="icone-fonte"></p>
+                </a>
+            </div>
+        </div>
+        <div class="row DetalheOs">
+            <h2>Informações</h2>
+            <ul>
+                <li>Nº: <span>@Model.Numero</span></li>
+                <li>Cliente: <span>@Model.Cliente</span></li>
+                <li>Material: <span>@Model.MaterialTipo</span></li>
+                <li>Titulo: <span>@Model.Material</span></li>
+                <li>Impressora: <span>@Model.Impressora</span></li>
+                <li>Estatus Orçamento: <span>@Model.EstatusOrcamento</span></li>
+
+                @if (!(Model.Observacao == "" || Model.Observacao == "N/A"))
+                {
+                    <li>Observação: <span>@Model.Observacao</span></li>
+                }
+
+                @{
+                    string perfil = Session["PerfilAcesso"].ToString();
+                    if (perfil == "ADM")
+                    {
+                        string href = Request.Url.Scheme + "://" + Request.Url.Authority + "/PreImpressao/EditarOS?IdOS=" + Model.IdOS;
+                        <li onclick="linkLinha('@href')" class="LinhaEditar">EDITAR</li>
+                    }
+                }
+
+            </ul>
+        </div>
+        <section id="Prova_Estatus_Histotico">
+            @Html.Partial("~/Views/PreImpressao/_Povas_Estatus_Historico.cshtml")
+        </section>
+    </section>
+</div>
+<section id="telaFundo"></section>
+<script type="text/javascript">
+    fecharTelaProcess();
+    $('#FechaRetorno').on('click', LimparRetorno);
+</script>

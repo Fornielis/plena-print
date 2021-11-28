@@ -1,0 +1,255 @@
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\obj\Debug\MinhaPre.csproj.CoreCompileInputs.cache
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\MinhaPre.dll.config
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\MinhaPre.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\MinhaPre.pdb
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\csc.exe
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\csc.exe.config
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\csc.rsp
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\csi.exe
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\csi.rsp
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\System.AppContext.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\vbc.exe
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\vbc.exe.config
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\vbc.rsp
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\VBCSCompiler.exe
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\Antlr3.Runtime.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\MySql.Data.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\Newtonsoft.Json.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\System.Web.Helpers.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\System.Web.Mvc.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\System.Web.Optimization.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\System.Web.Razor.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\System.Web.WebPages.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\System.Web.WebPages.Razor.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\WebGrease.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\System.Web.Helpers.xml
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\System.Web.Mvc.xml
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\System.Web.Optimization.xml
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\System.Web.Razor.xml
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\System.Web.WebPages.xml
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\System.Web.WebPages.Razor.xml
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\Newtonsoft.Json.xml
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\Antlr3.Runtime.pdb
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\pt-br\System.Web.Helpers.resources.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\pt-br\System.Web.Mvc.resources.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\pt-br\System.Web.Optimization.resources.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\pt-br\System.Web.Razor.resources.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\pt-br\System.Web.WebPages.resources.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\obj\Debug\MinhaPre.csproj.CopyComplete
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\obj\Debug\MinhaPre.dll
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\obj\Debug\MinhaPre.pdb
+C:\Users\Preimpressao2\source\repos\PlenaPrint\MinhaPre\obj\Debug\MinhaPre.csprojAssemblyReference.cache
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\MinhaPre.dll.config
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\MinhaPre.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\MinhaPre.pdb
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\csc.exe
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\csc.exe.config
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\csc.rsp
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\csi.exe
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\csi.rsp
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\System.AppContext.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\vbc.exe
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\vbc.exe.config
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\vbc.rsp
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\VBCSCompiler.exe
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\Antlr3.Runtime.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\MySql.Data.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\Newtonsoft.Json.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\System.Web.Helpers.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\System.Web.Mvc.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\System.Web.Optimization.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\System.Web.Razor.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\System.Web.WebPages.Deployment.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\System.Web.WebPages.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\System.Web.WebPages.Razor.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\WebGrease.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\System.Web.Helpers.xml
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\System.Web.Mvc.xml
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\System.Web.Optimization.xml
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\System.Web.Razor.xml
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\System.Web.WebPages.xml
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\System.Web.WebPages.Deployment.xml
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\System.Web.WebPages.Razor.xml
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\Newtonsoft.Json.xml
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\Antlr3.Runtime.pdb
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\pt-br\System.Web.Helpers.resources.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\pt-br\System.Web.Mvc.resources.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\pt-br\System.Web.Optimization.resources.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\pt-br\System.Web.Razor.resources.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\pt-br\System.Web.WebPages.resources.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\obj\Debug\MinhaPre.csprojAssemblyReference.cache
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\obj\Debug\MinhaPre.csproj.CoreCompileInputs.cache
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\obj\Debug\MinhaPre.csproj.CopyComplete
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\obj\Debug\MinhaPre.dll
+C:\Users\wilso\OneDrive\Área de Trabalho\PlenaPrint\MinhaPre\obj\Debug\MinhaPre.pdb
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\MinhaPre.dll.config
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\MinhaPre.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\MinhaPre.pdb
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\csc.exe
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\csc.exe.config
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\csc.rsp
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\csi.exe
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\csi.rsp
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\System.AppContext.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\System.Collections.Immutable.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\System.IO.FileSystem.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\System.Reflection.Metadata.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\vbc.exe
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\vbc.exe.config
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\vbc.rsp
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\VBCSCompiler.exe
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\roslyn\VBCSCompiler.exe.config
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\Antlr3.Runtime.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\Microsoft.Web.Infrastructure.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\MySql.Data.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\Newtonsoft.Json.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\System.Web.Helpers.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\System.Web.Mvc.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\System.Web.Optimization.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\System.Web.Razor.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\System.Web.WebPages.Deployment.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\System.Web.WebPages.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\System.Web.WebPages.Razor.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\WebGrease.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\System.Web.Helpers.xml
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\System.Web.Mvc.xml
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\System.Web.Optimization.xml
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\System.Web.Razor.xml
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\System.Web.WebPages.xml
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\System.Web.WebPages.Deployment.xml
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\System.Web.WebPages.Razor.xml
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\Newtonsoft.Json.xml
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\Antlr3.Runtime.pdb
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\pt-br\System.Web.Helpers.resources.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\pt-br\System.Web.Mvc.resources.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\pt-br\System.Web.Optimization.resources.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\pt-br\System.Web.Razor.resources.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\pt-br\System.Web.WebPages.resources.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\obj\Debug\MinhaPre.csproj.CoreCompileInputs.cache
+D:\DEVELOPER\PlenaPrint\MinhaPre\obj\Debug\MinhaPre.csproj.CopyComplete
+D:\DEVELOPER\PlenaPrint\MinhaPre\obj\Debug\MinhaPre.dll
+D:\DEVELOPER\PlenaPrint\MinhaPre\obj\Debug\MinhaPre.pdb
+D:\DEVELOPER\PlenaPrint\MinhaPre\obj\Debug\MinhaPre.csprojAssemblyReference.cache
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\obj\Debug\MinhaPre.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\obj\Debug\MinhaPre.pdb
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\MinhaPre.dll.config
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\MinhaPre.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\MinhaPre.pdb
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\csc.exe
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\csc.exe.config
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\csc.rsp
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\csi.exe
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\csi.rsp
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\System.AppContext.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\vbc.exe
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\vbc.exe.config
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\vbc.rsp
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\VBCSCompiler.exe
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\Antlr3.Runtime.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\MySql.Data.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\Newtonsoft.Json.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\System.Web.Helpers.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\System.Web.Mvc.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\System.Web.Optimization.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\System.Web.Razor.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\System.Web.WebPages.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\System.Web.WebPages.Razor.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\WebGrease.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\System.Web.Helpers.xml
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\System.Web.Mvc.xml
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\System.Web.Optimization.xml
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\System.Web.Razor.xml
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\System.Web.WebPages.xml
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\System.Web.WebPages.Razor.xml
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\Newtonsoft.Json.xml
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\Antlr3.Runtime.pdb
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\pt-br\System.Web.Helpers.resources.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\pt-br\System.Web.Mvc.resources.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\pt-br\System.Web.Optimization.resources.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\pt-br\System.Web.Razor.resources.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\pt-br\System.Web.WebPages.resources.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\bin\pt-br\System.Web.WebPages.Razor.resources.dll
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\obj\Debug\MinhaPre.csproj.CoreCompileInputs.cache
+C:\Users\Preimpressao2\Desktop\WILSON\_DEV\PlenaPrint\MinhaPre\obj\Debug\MinhaPre.csproj.CopyComplete

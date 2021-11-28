@@ -1,0 +1,50 @@
+﻿@model OS
+    <section id="tela-filtros"></section>
+    <div id="box-filtros" class="animated bounceInRight">
+        <h2>Filtros <span class="icone-fonte"></span></h2>
+        <form class="form" action="~/PreImpressao/Filtros" data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#dados" id="formFiltros" method="post">
+            <input type="number" name="Numero" value="" placeholder="Nº OS ou ORÇAMENTO" />
+            <input type="text" name="Cliente" value="" placeholder="Cliente" />
+            <input type="text" name="Material" value="" placeholder="Material" />
+            <input type="text" name="PrazoData" value="" placeholder="Prazo" class="mask-prazo-data"/>
+
+
+            <select name="Impressora">
+                <option value="">Impressora</option>
+                <option value="SM 5">SM 5</option>
+                <option value="SM 1">SM 1</option>
+                <option value="R300">R300</option>
+                <option value="RIOBY">RIOBY</option>
+                <option value="DIGITAL">DIGITAL</option>
+            </select>
+
+            <select name="OsEstatus">
+                <option value="">Estatus OS</option>
+                @{
+                    foreach (var item in ViewBag.Estatus)
+                    {
+                        <option value="@item">@item</option>
+                    }
+                }
+            </select>
+
+            <select data-val="true" data-val-required="Obrigatório" name="EstatusOrcamento">
+                <option value="">Estatus  Orçamento</option>
+                <option value="OK">OK</option>
+                <option value="Divergente">Divergente</option>
+            </select>
+
+            <input type="submit" value="FILTRAR" class="btn" />
+        </form>
+    </div>
+<script>
+    mascarasTextos();
+    $('#tela-filtros').on('click', function () {
+    $('#box-filtros').removeClass('bounceInRight');
+    $('#box-filtros').addClass('bounceOutRight');
+    setTimeout(function () {
+        document.getElementById("retorno").innerHTML = "";
+    }, 450);
+});
+</script>
+

@@ -1,0 +1,98 @@
+﻿@model ChapaMotivoLista
+<section id="ChapasGravadas">
+    <div id="boxFormulario">
+        <section class="container animated bounceInLeft">
+            <div class="row">
+
+                <div class="col-xs-12">
+                    <h1><span class="icone-fonte"></span>Chapas Regravadas</h1>
+                    <a data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#dados" href="~/PreImpressao/Lista">
+                        <p id="FechaChapaGravada" class="icone-fonte"></p>
+                    </a>
+                </div>
+
+                <form class="form" action="~/PreImpressao/ChapaRegravada" data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#dados" id="formChapasRegravadas" method="post">
+
+                    <input name="Regravacao" type="hidden" value="1" readonly />
+
+                    <div class="col-xs-12 formCampo">
+                        <input data-val="true" data-val-required="Obrigatório" name="NumeroOS" type="number" value="" placeholder="Nº OS" />
+                        <span class="field-validation-valid mensagem-erro" data-valmsg-for="NumeroOS" data-valmsg-replace="true"></span>
+                    </div>
+
+                    <div class="col-xs-12 formCampo">
+                        <select data-val="true" data-val-required="Obrigatório" name="Formato">
+                            <option value="">Chapa</option>
+                            <option value="RYOBI">RYOBI</option>
+                            <option value="R300">R300</option>
+                            <option value="BICOLOR">BICOLOR</option>
+                            <option value="SPD 5">SPD 5</option>
+                            <option value="SPD 10">SPD 10</option>
+                        </select>
+                        <span class="field-validation-valid mensagem-erro" data-valmsg-for="Formato" data-valmsg-replace="true"></span>
+                    </div>
+
+                    <div class="col-xs-12 formCampo">
+                        <select data-val="true" data-val-required="Obrigatório" name="Externo">
+                            <option value="">Local</option>
+                            <option value="1">INTERNO</option>
+                            <option value="0">EXTERNO</option>
+                        </select>
+                        <span class="field-validation-valid mensagem-erro" data-valmsg-for="Externo" data-valmsg-replace="true"></span>
+                    </div>
+
+                    <div class="col-xs-12 formCampo">
+                        <select data-val="true" data-val-required="Obrigatório" name="Motivo">
+                            <option value="">Motivo</option>
+                            @foreach (var item in Model)
+                            {
+                                <option value="@item.Id">@item.Motivo</option>
+                            }
+                        </select>
+                        <span class="field-validation-valid mensagem-erro" data-valmsg-for="Motivo" data-valmsg-replace="true"></span>
+                    </div>
+
+                    <div class="col-xs-6 formCampo">
+                        <input data-val="true" data-val-required="Obrigatório" name="Quantidade" type="number" value="" placeholder="Quantidade" />
+                        <span class="field-validation-valid mensagem-erro" data-valmsg-for="Quantidade" data-valmsg-replace="true"></span>
+                    </div>
+
+                    <div class="col-xs-6 formCampo">
+                        <input data-val="true" data-val-required="Obrigatório" name="Cores" type="text" value="" placeholder="Qual Cor" />
+                        <span class="field-validation-valid mensagem-erro" data-valmsg-for="Cores" data-valmsg-replace="true"></span>
+                    </div>
+
+                    <div class="col-xs-12 formCampo">
+                        <input type="submit" value="ADICIONAR CHAPAS" class="btn" />
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+    </div>
+    <section id="telaFundo"></section>
+    <script type="text/javascript">
+        mascarasTextos();
+        jQuery.validator.unobtrusive.parse();
+        jQuery.validator.unobtrusive.parse("#formChapasRegravadas");
+        $('#FechaChapaGravada').on('click', FecharChapaGravada);
+    </script>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

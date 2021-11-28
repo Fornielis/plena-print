@@ -1,0 +1,39 @@
+﻿@{
+    if (ViewBag.TotalItensLista > 0)
+    {
+        <table id="TabelaChapasGravadas">
+            <thead>
+                <tr>
+                    <th class="col-xs-3 radius-top-left">CHAPA</th>
+                    <th class="col-xs-3">QUANTIDADE</th>
+                    <th class="col-xs-3 radius-top-right" colspan="2">GRAVADO</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (var item in ViewBag.ChapasGravasLista)
+                {
+                    <tr>
+                        <td>@item.Formato</td>
+                        <td>@item.Quantidade</td>
+
+                        @if (item.Externo == 0)
+                        {
+                            <td>Externo</td>
+                        }
+                        else
+                        {
+                            <td>Interno</td>
+                        }
+                        <td>
+                            <a data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#RetonoListaChapasGravadas" href="~/PreImpressao/DeletarChapasGravadas?id=@item.Id&NumeroOS=@item.NumeroOS">
+                                <p class="icone-fonte"></p>
+                            </a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    }
+}

@@ -1,0 +1,106 @@
+﻿@model OS
+@{
+    string perfil = Session["PerfilAcesso"].ToString();
+    if (perfil != "COM")
+    {
+    <div class="row DetalheOs">
+        <h2>Estatus Atual - @Model.OsEstatus</h2>
+        @{
+            foreach (string estatus in ViewBag.Estatus)
+            {
+                if (estatus != Model.OsEstatus)
+                {
+                    if (estatus == "FIM" && Model.OsEstatus == "CTP")
+                    {
+                        <a data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#retorno" href="~/PreImpressao/ChapasGravadas?NumeroOS=@Model.Numero&IdOS=@Model.IdOS">
+                            <div class="btn-estatus @estatus">@estatus</div>
+                        </a>
+                    }
+                    else
+                    {
+                        if (estatus == "FIM" && Model.OsEstatus == "DIG")
+                        {
+                            <a data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#Prova_Estatus_Histotico" href="~/PreImpressao/AtualizaEstatus?IdOS=@Model.IdOS&EstatusAnterior=@Model.OsEstatus&EstatusAtual=@estatus&redirectLista=true">
+                                <div class="btn-estatus @estatus">@estatus</div>
+                            </a>
+                        }
+                        else
+                        {
+                            <a data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#Prova_Estatus_Histotico" href="~/PreImpressao/AtualizaEstatus?IdOS=@Model.IdOS&EstatusAnterior=@Model.OsEstatus&EstatusAtual=@estatus&redirectLista=false">
+                                <div class="btn-estatus @estatus">@estatus</div>
+                            </a>
+                        }
+                    }
+                }
+            }
+        }
+    </div>
+        <div class="row DetalheOs">
+            <h2>Prova - @Model.Prova</h2>
+            <ul>
+                <li>Estatus: <span>@Model.ProvaEstatus</span></li>
+            </ul>
+            <section id="box-estatus-prova" class="row">
+                <form class="form" action="~/PreImpressao/AtualizaProvas" data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#Prova_Estatus_Histotico" id="formEstatusProva" method="post">
+                    <input type="hidden" name="IdOS" value="@Model.IdOS" />
+                    <select data-val="true" data-val-required="Obrigatório" name="ProvaEstatus">
+                        <option value=""></option>
+                        @{
+                            switch (Model.Prova)
+                            {
+                                case "FÍSICA":
+                                    <option value="PROVAS IMPRESSAS">PROVAS IMPRESSAS</option>
+                                    <option value="PROVAS ENVIADAS">PROVAS ENVIADAS</option>
+                                    <option value="APROVADAS">APROVADAS</option>
+                                    <option value="REPROVADAS - Novo arquivo para NOVA PROVA">REPROVADAS - Novo arquivo para NOVA PROVA</option>
+                                    <option value="REPROVADAS - Novo arquivo para APROVAÇÃO VIRTUAL">REPROVADAS - Novo arquivo para APROVAÇÃO VIRTUAL</option>
+                                    break;
+
+                                case "VIRTUAL":
+                                    <option value="ARQUIVO OK PARA ENVIO">ARQUIVO OK PARA ENVIO</option>
+                                    <option value="ARQUIVO ENVIADO PARA APROVAÇÃO">ARQUIVO ENVIADO PARA APROVAÇÃO</option>
+                                    <option value="APROVADAS">APROVADAS</option>
+                                    <option value="REPROVADO - Novo arquivo para nova APROVAÇÃO VIRTUAL">REPROVADO - Novo arquivo para nova APROVAÇÃO VIRTUAL</option>
+                                    break;
+
+                                case "DIRETO":
+                                    <option value="PROVAS IMPRESSAS">PROVAS IMPRESSAS</option>
+                                    <option value="LIBERADAS PARA IMPRESSÃO">LIBERADAS PARA IMPRESSÃO</option>
+                                    break;
+                            }
+                        }
+                    </select>
+                    <input id="btn-prova-atualizar" class="icone-fonte" type="submit" value="" />
+                    <span class="field-validation-valid mensagem-erro" data-valmsg-for="ProvaEstatus" data-valmsg-replace="true" style="float:right;"></span>
+                </form>
+            </section>
+        </div>
+    }
+}
+<div class="row DetalheOs">
+    <h2>Histórico</h2>
+    @{
+        foreach (var item in ViewBag.Historico)
+        {
+        <div class="historico_dados">
+            <h4>@item.Usuario</h4>
+            <h5><span class="icone-fonte"></span> @item.Descricao</h5>
+            <h6><span>Inicio: </span>@item.DataInicio.ToString("dd-MM-yyyy HH:mm")</h6>
+
+            @if (item.MinutoTotal > 0 && item.DataInicio != item.DataFim)
+            {
+                <h6><span>Fim: </span>@item.DataFim.ToString("dd-MM-yyyy HH:mm")</h6>
+                <h6><b>Tempo Total</b> @item.MinutoTotal</h6>
+            }
+
+        </div>
+        }
+    }
+</div>
+
+<script type="text/javascript">
+    mascarasTextos();
+    jQuery.validator.unobtrusive.parse();
+    jQuery.validator.unobtrusive.parse("#formEstatusProva");
+</script>
+

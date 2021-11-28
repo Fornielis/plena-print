@@ -1,0 +1,33 @@
+﻿<div class="col-sm-6 col-xs-12 formCampo">
+    <input data-val="true" data-val-required="Obrigatório" name="Numero" type="number" value="" placeholder="Nº OS ou ORÇAMENTO" />
+    <span class="field-validation-valid mensagem-erro" data-valmsg-for="Numero" data-valmsg-replace="true"></span>
+</div>
+
+<div class="col-sm-6 col-xs-12 formCampo">
+    <input class="mask-prazo-data" id="PrazoData" name="PrazoData" type="text" value="" placeholder="Prazo | Data" />
+</div>
+
+<div class="col-xs-12 formCampo">
+    <textarea name="Observacao" placeholder="Observações"></textarea>
+</div>
+
+<div class="col-sm-6 col-xs-12 formCampo">
+    <fieldset>
+        <legend><span class="icone-fonte"></span> Aprovação</legend>
+
+        <div class="col-xs-4 formCheckBox">
+            <input type="radio" id="FÍSICA" name="Provas[]" value="FÍSICA" Text="FÍSICA">
+            <label for="FÍSICA">FÍSICA</label>
+        </div>
+
+        <div class="col-xs-4 formCheckBox">
+            <input type="radio" id="VIRTUAL" name="Provas[]" value="VIRTUAL">
+            <label for="VIRTUAL">VIRTUAL</label>
+        </div>
+
+        <div class="col-xs-4 formCheckBox">
+            <input type="radio" id="DIRETO" name="Provas[]" value="DIRETO">
+            <label for="DIRETO">DIRETO</label>
+        </div>
+    </fieldset>
+</div>

@@ -1,0 +1,39 @@
+﻿@model OS
+<div id="boxFormulario">
+    <section class="container animated bounceInLeft">
+        <div class="row">
+
+            <div class="col-xs-12">
+                <h1><span class="icone-fonte"></span> Nova OS</h1>
+                <a data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#dados" href="~/PreImpressao/Lista">
+                    <p id="FechaRetorno" class="icone-fonte"></p>
+                </a>
+            </div>
+
+            <form class="form" action="~/PreImpressao/MaisOS" data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#dados" id="formNovaOS" method="post">
+
+                @{
+                    var perfil = Session["PerfilAcesso"].ToString();
+                    if (perfil == "COM")
+                    {
+                        @Html.Partial("_MaisOS_Comercial")
+                    }
+                    else
+                    {
+                        @Html.Partial("_MaisOS_Pre")
+                    }
+                }
+
+                <div class="col-xs-12 formCampo">
+                    <input type="submit" value="SALVAR" class="btn" />
+                </div>
+            </form>
+        </div>
+    </section>
+</div>
+<section id="telaFundo"></section>
+<script type="text/javascript">
+    mascarasTextos();
+    jQuery.validator.unobtrusive.parse();
+    jQuery.validator.unobtrusive.parse("#formNovaOS");
+</script>

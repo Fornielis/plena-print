@@ -1,0 +1,155 @@
+﻿/* Responsividade:
+   
+    - Grid Bootstrap:
+        col-xs | até 480px
+        col-sm | maior igual 768px
+        col-md | maior igual 998px
+        col-lg | maior igual 1200px
+-------------------------------------------------- */
+/* GLOBAIS
+-------------------------------------------------- */
+@font-face {
+    font-family: 'Icone';
+    src: url('../../fonts/Font Awesome 5 Free-Solid-900.otf');
+}
+
+.icone-fonte {
+    font-family: 'Icone';
+    margin-right: 5px;
+}
+
+body {
+    font-family: 'Chivo', sans-serif;
+}
+
+/* LOGIN
+-------------------------------------------------- */
+#particles-js {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(202,227,246,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+#login {
+    width: 300px;
+    height: 360px;
+    border-bottom-left-radius: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    margin-top: -180px;
+    left: 50%;
+    margin-left: -150px;
+    background-color: #ffffff;
+}
+
+    #login img {
+        margin-bottom: 0px;
+        width:100%;
+        margin-bottom: 20px;
+    }
+
+    #login label {
+        font-size: 90%;
+        color: #5b5b5f;
+        float: left;
+    }
+
+.mensagem-erro {
+    color: #e6007e;
+    float: right;
+    font-family: Arial;
+}
+
+#login input {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+#login .btn {
+    width: 100%;
+    height: 50px;
+    color: #ffffff;
+    margin-bottom: 0px;
+    background-color: #2eabe3;
+    float: left;
+    transition: all .4s;
+}
+
+    #login .btn:hover {
+        background-color: #e6007e;
+    }
+
+#login form a {
+    color: #ffffff;
+}
+
+#login a:hover {
+    color: #ee8600;
+    text-decoration: none;
+}
+
+#login a span {
+    color: #ee8600;
+    font-size: 180%;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/* LOGIN - ERRO
+-------------------------------------------------- */
+
+#erro-login {
+    width: 300px;
+    height: 360px;
+    border-bottom-left-radius: 10px;
+    border-radius: 10px;
+    padding: 15px;
+    position: absolute;
+    top: 50%;
+    margin-top: -180px;
+    left: 50%;
+    margin-left: -150px;
+    z-index: 999;
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(202,227,246,1) 0%, rgba(255,255,255,1) 100%);
+}
+
+.btn-erro{
+    margin-top:30px;
+}
+
+    #erro-login img {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    #erro-login h5 {
+        font-size: 140%;
+        color: #ff6a00;
+        color: #e6007e
+    }
+
+#erro-login p {
+    font-size: 120%;
+    color: #5b5b5f;
+    margin-top: -20px;
+}

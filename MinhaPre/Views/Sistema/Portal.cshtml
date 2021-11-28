@@ -1,0 +1,80 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1" />
+    <title>Plena Print Online</title>
+    <link href="~/Imagens/icone.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Chivo&display=swap" rel="stylesheet">
+    <link href="/Content/Global/bootstrap.css" rel="stylesheet">
+    <link href="/Content/Animacoes/animate.css" rel="stylesheet">
+    <link href="/Content/Global/cores.css" rel="stylesheet">
+    <link href="/Content/Sistema/portal.css" rel="stylesheet">
+    <link href="/Content/Sistema/erro.css" rel="stylesheet">
+    <link href="~/Content/Sistema/formulario.css" rel="stylesheet">
+    <link href="/Content/PreImpressao/preImpressao.css" rel="stylesheet">
+</head>
+<body>
+    <div id="barra-superior" class="animated fadeInDown">
+        <section class="row">
+            <div class="container">
+                @{
+                    string perfil = Session["PerfilAcesso"].ToString();
+                    if (perfil != "COM")
+                    {
+                        <a data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#retorno" href="~/Sistema/Menu">
+                            <img src="~/Imagens/logo_horizontal_branco.png" alt="LOGO" />
+                        </a>
+                    }
+                    else
+                    {
+                        <a>
+                            <img src="~/Imagens/logo_horizontal_branco.png" alt="LOGO" />
+                        </a>
+                    }
+                }
+
+
+                <a data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#retorno" href="~/Usuario/Usuario">
+                    <h1 id="usuarioLogado" class="visible-lg visible-md visible-sm visible-xs"><span class="icone-fonte"> </span>@Session["Nome"]</h1>
+                </a>
+            </div>
+        </section>
+    </div>
+    <div id="dados"></div>
+    <div id="telaBloqueio"></div>
+    <div id="retorno"></div>
+    <div id="loader">
+        <div>
+            <img src="~/Imagens/loader.gif" alt="LOADER" />
+        </div>
+    </div>
+
+    @{
+        if (ViewBag.ErroSessao == true)
+        {
+            @Html.Partial("_ErroSessao")
+        };
+
+        if (ViewBag.Erro == true)
+        {
+            @Html.Partial("_Erro")
+        }
+    }
+    <script src="/Scripts/Global/jquery-3.2.1.js"></script>
+    <script src="/Scripts/Global/jquery.unobtrusive-ajax.js"></script>
+    <script src="/Scripts/Validacao/jquery.validate.js"></script>
+    <script src="/Scripts/Validacao/jquery.validate.unobtrusive.js"></script>
+    <script src="/Scripts/Validacao/jquery.validate.unobtrusive.js"></script>
+    <script src="/Scripts/Global/jquery.mask.js"></script>
+    <script src="/Scripts/Particulas/particles.js"></script>
+    <script src="~/Scripts/Sistema/portal.js"></script>
+    <script src="~/Scripts/PreImpressao/preImpressao.js"></script>
+    <script type="text/javascript">
+        carregamentoInicialDados();
+    </script>
+</body>
+</html>

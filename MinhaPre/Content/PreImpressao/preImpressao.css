@@ -1,0 +1,518 @@
+﻿/* Responsividade:
+   
+    - Grid Bootstrap:
+        col-xs | até 480px
+        col-sm | maior igual 768px
+        col-md | maior igual 998px
+        col-lg | maior igual 1200px
+-------------------------------------------------- */
+/* BOX BOTÕES
+-------------------------------------------------- */
+.box-btn {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 15px;
+}
+
+    .box-btn div {
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: #2eabe3;
+        color: #ffffff;
+        text-align: center;
+        cursor: pointer;
+        padding: 5px 0px 0px 3px;
+        transition: all .4s;
+        float: right;
+        margin-right: 10px;
+        padding-left: 4px;
+    }
+
+        .box-btn div:hover {
+            background-color: #ba007c;
+        }
+
+        .box-btn div p {
+            font-size: 100%;
+        }
+
+/* BOX - FILTROS
+-------------------------------------------------- */
+#tela-filtros {
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 990;
+    background-color: rgba(0,0,0,.7);
+}
+
+#box-filtros {
+    width: 300px;
+    min-height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    z-index: 999;
+    background-color: #ffffff;
+}
+
+    #box-filtros h2 {
+        font-size: 130%;
+        color: #2eabe3;
+        margin-left: 15px;
+    }
+
+    #box-filtros input, select {
+        margin-bottom: 10px;
+    }
+
+/* TABELA
+-------------------------------------------------- */
+.lista-conteudo {
+    height: auto;
+    padding-top: 15px;
+}
+
+table {
+    width: 100%;
+    height: auto;
+    border-bottom: solid 2px #2eabe3;
+}
+
+@media(min-width: 0px) and (max-width: 767px) {
+    table {
+        width: 96%;
+        margin-left: 2%;
+    }
+}
+
+thead {
+    background: rgb(48,48,48);
+    background: linear-gradient(0deg, rgba(48,48,48,1) 0%, rgba(0,0,0,1) 100%);
+    border-bottom: solid 2px #2eabe3;
+    color: #ffffff;
+}
+
+    thead tr {
+        height: 30px;
+    }
+
+        thead tr th {
+            text-align: center;
+            font-size: 90%;
+        }
+
+tbody tr {
+    height: 40px;
+    text-align: center;
+    font-size: 90%;
+    background: linear-gradient(to bottom, #ffffff 0%,#d8d9dd 100%);
+    cursor: pointer;
+}
+
+    tbody tr .icone_orcamento {
+        text-align: center;
+        color: green;
+    }
+
+    tbody tr .text_left {
+        text-align: left;
+    }
+
+    tbody tr:hover {
+        background: linear-gradient(to bottom, #f49ac1 1%,#ec008c 100%);
+        color: #ffffff;
+    }
+
+        tbody tr:hover .icone_orcamento {
+            color: #ffffff;
+        }
+
+@media(min-width: 0px) and (max-width: 991px) {
+    tbody tr td span {
+        display: none;
+    }
+}
+
+.tr-status {
+    background-color: #2eabe3;
+}
+
+.tr-left {
+    text-align: left;
+}
+
+.radius-top-left {
+    border-top-left-radius: 10px;
+}
+
+.radius-top-right {
+    border-top-right-radius: 10px;
+}
+
+.pading-left {
+    padding-left: 10px;
+    text-align: left;
+}
+
+.txt-overflow {
+    max-width: 10ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media(min-width: 0px) and (max-width: 767px) {
+    .tr-status {
+        border-top-right-radius: 10px;
+    }
+}
+
+/* CLASSES ESTATUS
+-------------------------------------------------- */
+.NEW {
+    background: linear-gradient(to bottom, #ffffff 1%,#fab182 100%);
+}
+
+.PEN {
+    background: linear-gradient(to bottom, #ffffff 0%,#e30613 100%);
+}
+
+.PRE {
+    background: linear-gradient(to bottom, #ffffff 0%,#5bc5f2 100%);
+}
+
+.PRO {
+    background: linear-gradient(to bottom, #ffffff 0%,#fff482 100%);
+}
+
+.APR {
+    background: linear-gradient(to bottom, #ffffff 0%,#8ccaae 100%);
+}
+
+.ENG {
+    background: linear-gradient(to bottom, #ffffff 0%,#b17b7f 100%);
+}
+
+.MON {
+    background: linear-gradient(to bottom, #ffffff 0%,#f088b6 100%);
+}
+
+.CTP {
+    background: linear-gradient(to bottom, #ffffff 0%,#bdb5da 100%);
+}
+
+.DIG {
+    background: linear-gradient(to bottom, #ffffff 0%,#8ee6e7 100%);
+}
+
+.FIM {
+    background: linear-gradient(to bottom, #ffffff 0%,#878787 100%);
+}
+
+tbody tr:hover .REC,
+tbody tr:hover .PEN,
+tbody tr:hover .PRE,
+tbody tr:hover .PRO,
+tbody tr:hover .APR,
+tbody tr:hover .ENG,
+tbody tr:hover .MON,
+tbody tr:hover .CTP,
+tbody tr:hover .DIG,
+tbody tr:hover .FIM {
+    background: linear-gradient(to bottom, #f49ac1 1%,#ec008c 100%);
+    color: #ffffff;
+}
+
+/* TELAS RETORNO - PADRÃO
+-------------------------------------------------- */
+#boxRetornoPadrao {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: block;
+}
+
+    #boxRetornoPadrao .container {
+        height: auto;
+        background: rgb(2,0,36);
+        background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(202,227,246,1) 0%, rgba(255,255,255,1) 100%);
+        border-top: solid 3px #2eabe3;
+        border-bottom: solid 3px #2eabe3;
+        padding: 0px 15px 0px 15px;
+    }
+
+    #boxRetornoPadrao h1 {
+        font-size: 130%;
+        margin: 15px 0px 0px 15px;
+        float: left;
+    }
+
+        #boxRetornoPadrao h1 span {
+            color: #2eabe3;
+        }
+
+    #boxRetornoPadrao p {
+        font-size: 180%;
+        color: #2eabe3;
+        float: right;
+        margin: 10px 15px 15px 15px;
+        cursor: pointer;
+    }
+
+@media(min-width: 0px) and (max-width: 460px) {
+    #boxRetornoPadrao .container {
+        padding: 0px 25px 20px 15px;
+    }
+}
+
+#telaFundo {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 990;
+    background-color: rgba(0,0,0,.7);
+}
+
+
+/* BOX - DETALHE OS
+-------------------------------------------------- */
+.DetalheOs {
+    height: auto;
+    padding: 15px;
+    margin: 0px 0px 30px 0px;
+    border-left: solid 4px #2eabe3;
+}
+
+    .DetalheOs b {
+        color: #ffffff;
+        background-color: #2eabe3;
+        padding: 4px 10px 4px 10px;
+        border-radius: 8px;
+        font-size: 90%;
+    }
+
+    .DetalheOs h2 {
+        font-size: 120%;
+        color: #2eabe3;
+        margin-top: 0px;
+    }
+
+    .DetalheOs ul {
+        text-align: left;
+        margin: -5px 0px 0px -39px;
+    }
+
+        .DetalheOs ul .LinhaEditar {
+            width: 100px;
+            height: 40px;
+            background-color: #2eabe3;
+            color: #ffffff;
+            text-align: center;
+            padding: 11px 0px 0px 0px;
+            margin-top: 10px;
+            border-top-left-radius: 10px;
+            cursor: pointer;
+        }
+
+            .DetalheOs ul .LinhaEditar:hover {
+                background-color: #ec008c;
+            }
+
+        .DetalheOs ul li {
+            list-style: none;
+            font-size: 100%;
+            color: #9a999e;
+            margin-right: 30px;
+        }
+
+            .DetalheOs ul li span {
+                color: #000000;
+                font-size: 110%;
+                text-align: right;
+            }
+
+@media(min-width: 0px) and (max-width: 460px) {
+    .DetalheOs ul li {
+        float: none;
+        margin-right: 0px;
+    }
+}
+
+/* BOX - ESTATUS
+-------------------------------------------------- */
+.btn-estatus {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #2eabe3;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    padding-top: 15px;
+    color: #000000;
+    font-size: 100%;
+    margin: 5px;
+    border-top: solid 2px #2eabe3;
+}
+
+    .btn-estatus:hover {
+        background: linear-gradient(to bottom, #f49ac1 1%,#ec008c 100%);
+        color: #ffffff;
+    }
+
+/* BOX - HISTORICO
+-------------------------------------------------- */
+.historico_dados {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(202,227,246,1) 0%, rgba(255,255,255,1) 100%);
+    padding: 5px 0px 5px 15px;
+}
+
+    .historico_dados h4 {
+        font-size: 100%;
+    }
+
+        .historico_dados h4 span,
+        .historico_dados h6 span {
+            color: #2eabe3;
+        }
+
+    .historico_dados h5 {
+        font-size: 100%;
+    }
+
+        .historico_dados h5 span {
+            color: #2eabe3;
+        }
+
+/* BOX - PROVAS
+-------------------------------------------------- */
+#box-estatus-prova {
+    width: 75%;
+    padding: 15px 15px 0px 0px;
+}
+
+    #box-estatus-prova form select {
+        width: 85%;
+        margin-top: 0px;
+        float: right;
+        border-left: none;
+    }
+
+#btn-prova-atualizar {
+    width: 15%;
+    height: 40px;
+    margin: 0px 0px 0px 0px;
+    background-color: #2eabe3;
+    color: #ffffff;
+    border: none;
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    font-size: 100%;
+}
+
+    #btn-prova-atualizar:hover {
+        background-color: #ec008c;
+    }
+
+@media(min-width: 0px) and (max-width: 460px) {
+    #box-estatus-prova {
+        width: 100%;
+        padding: 0px;
+    }
+
+    #btn-prova-atualizar {
+        margin-top: 0px;
+    }
+}
+
+/* AVISO DELETAR OS
+-------------------------------------------------- */
+#BoxAviso {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgbA(0,0,0,.6);
+    z-index: 999;
+    display: block;
+}
+
+    #BoxAviso div {
+        width: 300px;
+        height: 410px;
+        border-bottom-left-radius: 10px;
+        border-radius: 10px;
+        padding: 20px;
+        position: absolute;
+        top: 50%;
+        margin-top: -205px;
+        left: 50%;
+        margin-left: -150px;
+        background: rgb(2,0,36);
+        background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(202,227,246,1) 0%, rgba(255,255,255,1) 100%);
+        text-align: center;
+    }
+
+        #BoxAviso div img {
+            margin-bottom: 0px;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        #BoxAviso div h5 {
+            font-size: 140%;
+            color: #ff6a00;
+            color: #e6007e
+        }
+
+        #BoxAviso div p {
+            font-size: 120%;
+            color: #5b5b5f;
+            margin-top: -20px;
+        }
+
+        #BoxAviso div .btn {
+            width: 100%;
+            height: 50px;
+            color: #ffffff;
+            margin-bottom: 15px;
+            background-color: #2eabe3;
+            float: left;
+            transition: all .4s;
+        }
+
+            #BoxAviso div .btn:hover {
+                background-color: #e6007e;
+            }
+
+/* CHAPAS GRAVADAS
+-------------------------------------------------- */
+#ChapasGravadas {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 997;
+}
+
+#RetonoListaChapasGravadas {
+    padding: 25px;
+}
+
+    #RetonoListaChapasGravadas table tbody tr {
+        height: 20px;
+    }

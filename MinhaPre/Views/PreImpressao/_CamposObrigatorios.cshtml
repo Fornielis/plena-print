@@ -1,0 +1,24 @@
+﻿<section id="Erro" class="erro_sistema">
+    <div class="animated zoomInDown">
+        <img src="~/Imagens/LOGO-ATENCAO.png" alt="IMG" />
+        <h5>Atenção!</h5>
+        <br />
+        @{
+            var perfil = Session["PerfilAcesso"].ToString();
+            if (perfil == "COM")
+            {
+                <p>Por favor definir o tipo de aprovação.</p>
+            }
+            else
+            {
+                <p>Os campos provas e impresoras devem ser preenchidas.</p>
+            }
+        }
+
+        <br />
+        <input class="btn" type="button" value="OK">
+    </div>
+</section>
+<script type="text/javascript">
+    $('#Erro input').on('click', FecharJanelaErro);
+</script>

@@ -1,0 +1,43 @@
+﻿@model Chapa
+<form class="form" action="~/PreImpressao/ChapasGravadas" data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#RetonoListaChapasGravadas" id="formChapasGravadas" method="post">
+
+    <input name="NumeroOS" type="hidden" value="@Model.NumeroOS" readonly />
+    <input name="Regravacao" type="hidden" value="0" readonly />
+
+    <div class="col-xs-12 formCampo">
+        <select data-val="true" data-val-required="Obrigatório" name="Externo">
+            <option value="">Local</option>
+            <option value="1">INTERNO</option>
+            <option value="0">EXTERNO</option>
+        </select>
+        <span class="field-validation-valid mensagem-erro" data-valmsg-for="Externo" data-valmsg-replace="true"></span>
+    </div>
+
+    <div class="col-xs-12 formCampo">
+        <select data-val="true" data-val-required="Obrigatório" name="Formato">
+            <option value="">Chapa</option>
+            <option value="RYOBI">RYOBI</option>
+            <option value="R300">R300</option>
+            <option value="BICOLOR">BICOLOR</option>
+            <option value="SPD 5">SPD 5</option>
+            <option value="SPD 10">SPD 10</option>
+        </select>
+        <span class="field-validation-valid mensagem-erro" data-valmsg-for="Formato" data-valmsg-replace="true"></span>
+    </div>
+
+    <div class="col-xs-12 formCampo">
+        <input data-val="true" data-val-required="Obrigatório" name="Quantidade" type="number" value="" placeholder="Quantidade" />
+        <span class="field-validation-valid mensagem-erro" data-valmsg-for="Quantidade" data-valmsg-replace="true"></span>
+    </div>
+
+    <div class="col-xs-12 formCampo">
+        <input type="submit" value="ADICIONAR CHAPAS" class="btn" />
+    </div>
+
+    <a data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#dados" href="~/PreImpressao/AtualizaEstatus?IdOS=@ViewBag.IdOS&EstatusAnterior=CTP&EstatusAtual=FIM&redirectLista=true">
+        <div class="col-xs-12 formCampo">
+            <input type="button" value="FINALIZAR OS" class="btn" />
+        </div>
+    </a>
+
+</form>

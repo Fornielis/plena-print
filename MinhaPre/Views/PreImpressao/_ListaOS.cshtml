@@ -1,0 +1,147 @@
+﻿@model OSLista
+<section class="row">
+    <div class="container">
+        <div class="lista-conteudo animated fadeIn">
+            <section class="box-btn">
+                <a data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#dados" href="~/PreImpressao/Lista">
+                    <div>
+                        <p class="icone-fonte"></p>
+                    </div>
+                </a>
+                <a data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#retorno" href="~/PreImpressao/Filtros">
+                    <div>
+                        <p class="icone-fonte"></p>
+                    </div>
+                </a>
+                <a data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#retorno" href="~/PreImpressao/MaisOS">
+                    <div>
+                        <p class="icone-fonte"></p>
+                    </div>
+                </a>
+
+                @{
+                    string perfil = Session["PerfilAcesso"].ToString();
+                    if (perfil != "COM")
+                    {
+                        <a data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#retorno" href="~/PreImpressao/ChapaRegravada">
+                            <div>
+                                <p class="icone-fonte"></p>
+                            </div>
+                        </a>
+                    }
+                }
+
+            </section>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col-md-1 col-xs-4 radius-top-left" colspan="2">OS</th>
+                        <th class="col-md-2 col-xs-3">CLIENTE</th>
+                        <th class="col-md-3 col-xs-4">MATERIAL</th>
+                        <th class="col-md-2 visible-lg visible-sm visible-md">IMPRESSORA</th>
+                        <th class="col-md-1 col-xs-3 tr-status">STATUS</th>
+                        <th class="col-md-3 visible-lg visible-sm visible-md radius-top-right">PRAZO</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+
+                        //MONTAGEM LINK
+                        string href = Request.Url.Scheme + "://" + Request.Url.Authority + "/PreImpressao/OsPorID?IdOS=" + item.IdOS;
+
+                        <tr onclick="linkLinha('@href')">
+                            @if (item.EstatusOrcamento == "OK")
+                            {
+                                <td class="icone-fonte icone_orcamento"></td>
+                            }
+                            else
+                            {
+                                <td class="icone-fonte">&nbsp;</td>
+                            }
+                            <td class="text_left">@item.Numero</td>
+                            <td class="txt-overflow text_left">@item.Cliente</td>
+
+                            <td class="txt-overflow text_left">
+
+                                @{
+                                    if (item.MaterialTipo != "NAO DEFINIDO")
+                                    {
+                                        <b>@item.MaterialTipo | </b>
+                                    }
+                                }
+                                @item.Material
+                            </td>
+
+                            <td class="visible-lg visible-sm visible-md txt-overflow text_left">@item.Impressora</td>
+                            <td class="@item.OsEstatus">
+                                @{
+                                    string estatus = item.OsEstatus.ToString();
+                                    switch (estatus)
+                                    {
+                                        case "NEW":
+                                            <span class="icone-fonte"></span>
+                                            break;
+                                        case "PEN":
+                                            <span class="icone-fonte"></span>
+                                            break;
+                                        case "PRE":
+                                            <span class="icone-fonte"></span>
+                                            break;
+                                        case "PRO":
+                                            <span class="icone-fonte"></span>
+                                            break;
+                                        case "APR":
+                                            if (item.Prova == "VIRTUAL")
+                                            {
+                                                <span class="icone-fonte"></span>
+                                            }
+
+                                            else
+                                            {
+                                                <span class="icone-fonte"></span>
+                                            }
+                                            break;
+                                        case "ENG":
+                                            <span class="icone-fonte"></span>
+                                            break;
+                                        case "MON":
+                                            <span class="icone-fonte"></span>
+                                            break;
+                                        case "CTP":
+                                            <span class="icone-fonte"></span>
+                                            break;
+                                        case "DIG":
+                                            <span class="icone-fonte"></span>
+                                            break;
+                                        case "FIM":
+                                            <span class="icone-fonte"></span>
+                                            break;
+                                    }
+                                }
+
+                                @item.OsEstatus
+                            </td>
+                            <td class="visible-lg visible-sm visible-md">
+                                @{
+                                    if (!(item.PrazoData == "" || item.PrazoData == "//" || item.PrazoData == "DEFINIR"))
+                                    {
+                                        <span class="icone-fonte"></span> @item.PrazoData
+                                    }
+                                    else
+                                    {
+                                       <b>INDEFINIDO</b>
+                                    }
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    FecharLoader();
+    LimparRetorno();
+</script>

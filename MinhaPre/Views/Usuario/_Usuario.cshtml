@@ -1,0 +1,34 @@
+﻿<section id="tela-usuario"></section>
+<div id="dadosUsuario" class="animated bounceInRight">
+    <span id="iconeUsuario" class="icone-fonte"> </span>
+    <h1>@Session["Nome"]</h1>
+    <form action="~/Usuario/AlteraSenha" data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#retorno" id="form" enctype="multipart/form-data" method="post">
+
+        @{
+            string perfil = Session["PerfilAcesso"].ToString();
+            if (perfil != "COM")
+            {
+                <span class="field-validation-valid mensagem-erro" data-valmsg-for="Senha" data-valmsg-replace="true"></span>
+                <input data-val="true" data-val-required="OBRIGATÓRIO" id="Senha" name="Senha" type="password" value="" placeholder="Senha Atual" /><br />
+
+                <span class="field-validation-valid mensagem-erro" data-valmsg-for="NovaSenha" data-valmsg-replace="true"></span>
+                <input data-val="true" data-val-required="OBRIGATÓRIO" id="NovaSenha" name="NovaSenha" type="password" value="" placeholder="Nova Senha" /><br />
+
+                <input class="btn" type="submit" value="SALVAR"><br />
+            }
+        }
+
+        <a href="~/Login/Inicio" class="btn-sair">
+            <span class="icone-fonte"></span> SAIR
+        </a>
+    </form>
+</div>
+<script>
+    $('#tela-usuario').on('click', function () {
+    $('#dadosUsuario').removeClass('bounceInRight');
+    $('#dadosUsuario').addClass('bounceOutRight');
+    setTimeout(function () {
+        document.getElementById("retorno").innerHTML = "";
+    }, 450);
+});
+</script>

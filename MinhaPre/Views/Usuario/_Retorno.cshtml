@@ -1,0 +1,38 @@
+﻿<section id="Retorno">
+    <div class="animated zoomInDown">
+        @{
+            if (ViewBag.Retorno == "SenhasIguais")
+            {
+                <img src="~/Imagens/LOGO-ATENCAO.png" alt="IMG" />
+                <h5>Confirmar dados!</h5>
+                <br />
+                <p>Senha atual e nova são as mesmas. Considerar uma nova senha!</p>
+                <br />
+            }
+
+            if (ViewBag.Retorno == "Alterada")
+            {
+                <img src="~/Imagens/LOGO-OK.png" alt="IMG" />
+                <h5>Senha Alterada!</h5>
+                <br />
+                <p>Na próxima vez que for logar utilizar a nova senha.</p>
+                <br />
+            }
+
+            if (ViewBag.Retorno == "SenhaAtualErrada")
+            {
+                <img src="~/Imagens/LOGO-ATENCAO.png" alt="IMG" />
+                <h5>Confirmar dados!</h5>
+                <br />
+                <p>Senha atual fornecida está errada. Confirmar!</p>
+                <br />
+            }
+
+        }
+        <input class="btn" type="button" value="OK">
+    </div>
+</section>
+<script type="text/javascript">
+    $('#Retorno input').on('click', FecharJanelaRetorno);
+</script>
+

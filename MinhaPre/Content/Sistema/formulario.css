@@ -1,0 +1,141 @@
+﻿/* Responsividade:
+   
+    - Grid Bootstrap:
+        col-xs | até 480px
+        col-sm | maior igual 768px
+        col-md | maior igual 998px
+        col-lg | maior igual 1200px
+-------------------------------------------------- */
+/* FORMUULARIOS
+-------------------------------------------------- */
+#boxFormulario {
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 997;
+    display: block;
+}
+
+    #boxFormulario .container {
+        height: auto;
+        background: rgb(2,0,36);
+        background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(202,227,246,1) 0%, rgba(255,255,255,1) 100%);
+        border-top: solid 3px #2eabe3;
+        border-bottom: solid 3px #2eabe3;
+        padding-bottom: 20px;
+    }
+
+    #boxFormulario h1 {
+        font-size: 130%;
+        margin: 15px;
+        float: left;
+    }
+
+        #boxFormulario h1 span {
+            color: #2eabe3;
+        }
+
+        #boxFormulario h1 b {
+            color: #ba007c;
+        }
+
+
+    #boxFormulario p {
+        font-size: 180%;
+        color: #2eabe3;
+        float: right;
+        margin: 10px 15px 15px 15px;
+        cursor: pointer;
+    }
+
+.form {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+}
+
+#camposProvaImpressoras{
+    display:none;
+}
+
+@media(min-width: 0px) and (max-width: 460px) {
+    #boxFormulario p {
+        margin: 10px 25px 15px 15px;
+    }
+
+    .form {
+        padding: 15px 25px 15px 15px;
+    }
+}
+
+    .formCampo {
+        margin-top: 15px;
+    }
+
+    .form input, select {
+        width: 100%;
+        height: 40px;
+        padding-left: 10px;
+        border-left: solid 3px #2eabe3;
+        border-top-right-radius: 10px;
+    }
+
+    .form textarea {
+        width: 100%;
+        height: 80px;
+        padding-left: 10px;
+        border-left: solid 3px #2eabe3;
+        border-top-right-radius: 10px;
+    }
+
+    .form .btn {
+        background-color: #2eabe3;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+        color: #ffffff;
+    }
+
+        .form .btn:hover {
+            background-color: #ba007c;
+        }
+
+    #formNovaOS .mensagem-erro {
+        float: right;
+        font-size: 80%;
+    }
+
+
+    /* CHECK BOX
+-------------------------------------------------- */
+    .form legend {
+        text-align: left;
+    }
+
+        .form legend span {
+            color: #2eabe3;
+        }
+
+    .formCheckBox {
+        height: auto;
+        text-align: left;
+        text-align: left;
+        padding: 10px;
+    }
+
+        .formCheckBox label {
+            float: left;
+            margin-top: 5px;
+        }
+
+        .formCheckBox input[type=checkbox],
+        .formCheckBox input[type=radio] {
+            width: 20px;
+            height: 20px;
+            float: left;
+            margin-right: 5px;
+        }

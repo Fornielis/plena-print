@@ -1,0 +1,99 @@
+﻿<div class="col-sm-3 col-xs-12 formCampo">
+    <input data-val="true" data-val-required="Obrigatório" name="Numero" type="number" value="" placeholder="Nº OS ou ORÇAMENTO" />
+    <span class="field-validation-valid mensagem-erro" data-valmsg-for="Numero" data-valmsg-replace="true"></span>
+</div>
+
+<div class="col-sm-6 col-xs-12 formCampo">
+    <input data-val="true" data-val-required="Obrigatório" name="Cliente" type="text" value="" placeholder="Cliente" />
+    <span class="field-validation-valid mensagem-erro" data-valmsg-for="Cliente" data-valmsg-replace="true"></span>
+</div>
+
+<div class="col-sm-3 col-xs-12 formCampo">
+    <select data-val="true" data-val-required="Obrigatório" name="EstatusOrcamento">
+        <option value="">Estatus  Orçamento</option>
+        <option value="OK">OK</option>
+        <option value="Divergente">Divergente</option>
+    </select>
+    <span class="field-validation-valid mensagem-erro" data-valmsg-for="EstatusOrcamento" data-valmsg-replace="true"></span>
+</div>
+
+<div class="col-sm-4 col-xs-12 formCampo">
+    <select data-val="true" data-val-required="Obrigatório" name="IdMaterialTipo">
+        <option value="">Material Tipo</option>
+        @{
+            foreach (var item in ViewBag.MaterialTipoLista)
+            {
+                if (item.Id > 1)
+                {
+                    <option value="@item.Id">@item.Material</option>
+                }
+            }
+        }
+    </select>
+    <span class="field-validation-valid mensagem-erro" data-valmsg-for="IdMaterialTipo" data-valmsg-replace="true"></span>
+</div>
+
+<div class="col-sm-4 col-xs-12 formCampo">
+    <input data-val="true" data-val-required="Obrigatório" name="Material" type="text" value="" placeholder="Breve Descrição Material" />
+    <span class="field-validation-valid mensagem-erro" data-valmsg-for="Material" data-valmsg-replace="true"></span>
+</div>
+
+<div class="col-sm-4 col-xs-12 formCampo">
+    <input class="mask-prazo-data" id="PrazoData" name="PrazoData" type="text" value="" placeholder="Prazo | Data" />
+</div>
+
+<div class="col-xs-12 formCampo">
+    <textarea name="Observacao" placeholder="Observações"></textarea>
+</div>
+
+<div class="col-sm-6 col-xs-12 formCampo">
+    <fieldset>
+        <legend><span class="icone-fonte"></span> Aprovação</legend>
+
+        <div class="col-xs-4 formCheckBox">
+            <input type="radio" id="FÍSICA" name="Provas[]" value="FÍSICA" Text="FÍSICA">
+            <label for="FÍSICA">FÍSICA</label>
+        </div>
+
+        <div class="col-xs-4 formCheckBox">
+            <input type="radio" id="VIRTUAL" name="Provas[]" value="VIRTUAL">
+            <label for="VIRTUAL">VIRTUAL</label>
+        </div>
+
+        <div class="col-xs-4 formCheckBox">
+            <input type="radio" id="DIRETO" name="Provas[]" value="DIRETO">
+            <label for="DIRETO">DIRETO</label>
+        </div>
+    </fieldset>
+</div>
+
+<div class="col-sm-6 col-xs-12 formCampo">
+    <fieldset>
+        <legend><span class="icone-fonte"></span> Impressoras</legend>
+
+        <div class="col-xs-4 col-xs-6 formCheckBox">
+            <input type="checkbox" id="SM 5" name="Impressoras[]" value="SM 5" Text="SM 5">
+            <label for="SM 5">SM 5</label>
+        </div>
+
+        <div class="col-xs-4 col-xs-6 formCheckBox">
+            <input type="checkbox" id="SM 1" name="Impressoras[]" value="SM 1">
+            <label for="SM 1">SM 1</label>
+        </div>
+
+        <div class="col-xs-4 col-xs-6 formCheckBox">
+            <input type="checkbox" id="R300" name="Impressoras[]" value="R300">
+            <label for="R300">R300</label>
+        </div>
+
+        <div class="col-xs-4 col-xs-6 formCheckBox">
+            <input type="checkbox" id="RIOBY" name="Impressoras[]" value="RIOBY">
+            <label for="RIOBY">RIOBY</label>
+        </div>
+
+        <div class="col-xs-4 col-xs-6 formCheckBox">
+            <input type="checkbox" id="DIGITAL" name="Impressoras[]" value="DIGITAL">
+            <label for="DIGITAL">DIGITAL</label>
+        </div>
+    </fieldset>
+</div>

@@ -1,0 +1,21 @@
+﻿<div id="box-Menu" class="animated bounceInLeft">
+    <section class="item-menu">
+        <div id="menu-dados-sistema" class="titulo-menu">SISTEMA</div>
+        <a data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#dados" href="~/Sistema/AbreSistema">
+            <div class="sub-menu">Abrir Sitema</div>
+        </a>
+        <a data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#dados" href="~/Sistema/FechaSistema">
+            <div class="sub-menu">Fechar Sistema</div>
+        </a>
+    </section>
+</div>
+<section id="telaFundo"></section>
+<script>
+    $('#telaFundo').on('click', function () {
+    $('#box-Menu').removeClass('bounceInLeft');
+    $('#box-Menu').addClass('bounceOutLeft');
+    setTimeout(function () {
+        document.getElementById("retorno").innerHTML = "";
+    }, 450);
+});
+</script>

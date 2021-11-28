@@ -1,0 +1,96 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1" />
+    <meta property="og:url" content="https://minhapre.com">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Minha Pré">
+    <meta property="og:description" content="Aplicação para controle de fluxo interno dos trabalhos da Pré-impressão.">
+    <meta property="og:image" content="http://minhapre.com/publico/miniatura.jpg">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <title>Minha Pré</title>
+    <link href="https://fonts.googleapis.com/css?family=Chivo&display=swap" rel="stylesheet">
+    <link href="~/Imagens/icone.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="/Content/Global/bootstrap.css" rel="stylesheet">
+    <link href="/Content/Animacoes/animate.css" rel="stylesheet">
+    <link href="/Content/Global/cores.css" rel="stylesheet">
+    <link href="/Content/Login/login.css" rel="stylesheet">
+</head>
+<body>
+    <div id="particles-js" class="degrade-cinza">
+        @* FORMULÁRIO DE LOGIN *@
+        <form id="login" class="cor-degrade-preto animated zoomInDown" action="~/Login/Autenticacao" method="post">
+            <img src="~/Imagens/logo_horizontal.png" alt="LOGO" />
+
+            <label><span class="icone-fonte"></span>Usuário</label><span class="field-validation-valid mensagem-erro" data-valmsg-for="userName" data-valmsg-replace="true"></span>
+            <input class="text-box single-line" data-val="true" data-val-required="Obrigatório" id="userName" name="userName" type="text" value="" /><br />
+
+            <label><span class="icone-fonte"></span>Senha</label><span class="field-validation-valid mensagem-erro" data-valmsg-for="Senha" data-valmsg-replace="true"></span>
+            <input data-val="true" data-val-required="Obrigatório" id="Senha" name="Senha" type="password" value="" /><br />
+
+            <input class="btn" type="submit" value="Entrar">
+
+            @{
+                if (ViewBag.Erro != null)
+                {
+                    //ERRO LOGIN
+                    <div id="erro-login" class="animated zoomInDown">
+                        <img src="~/Imagens/LOGO-ERRO.png" alt="IMG" />
+
+                        @{
+                            //CAMPOS USUSARIO E SENHA VAZIOS
+                            if (ViewBag.Erro == "CamposNull")
+                            {
+                                <h5>OBRIGATÓRIO</h5>
+                                <br />
+                                <p>Campo de USUÀRIO e SENHA são obrigatórios para obter acesso</p>
+                                <br />
+                            }
+
+                            //USUÁRIO INVÁLIDO
+                            if (ViewBag.Erro == "LogInnvalido")
+                            {
+                                <h5>USUÁRIO NÃO EXISTE</h5>
+                                <br />
+                                <p>Verifique se o USUÀRIO e SENHA fornecidos estão corretos.</p>
+                                <br />
+                            }
+                            //ERRO SESSÃO
+                            if (ViewBag.Erro == "ErroSessao")
+                            {
+                                <h5>TEMPO EXPIRADO!</h5>
+                                <br />
+                                <p>Faça novamente o login para continuar navegando.</p>
+                                <br />
+                            }
+                            //ERRO
+                            if (ViewBag.Erro == "Erro")
+                            {
+                                <h5>OPS!</h5>
+                                <br />
+                                <p>Aconteceu um erro inesperado. Entre em contato com o administrador.</p>
+                                <br />
+                            }
+                        }
+                        <input class="btn btn-erro" type="button" value="OK">
+                    </div>
+                }
+            }
+        </form>
+    </div>
+    <script src="/Scripts/Global/jquery-3.2.1.js"></script>
+    <script src="/Scripts/Global/jquery.unobtrusive-ajax.js"></script>
+    <script src="/Scripts/Validacao/jquery.validate.js"></script>
+    <script src="/Scripts/Validacao/jquery.validate.unobtrusive.js"></script>
+    <script src="/Scripts/Validacao/jquery.validate.unobtrusive.js"></script>
+    <script src="/Scripts/Global/jquery.mask.js"></script>
+    <script src="/Scripts/Particulas/particles.js"></script>
+    <script src="/Scripts/Particulas/app.js"></script>
+    <script src="/Scripts/Login/login.js"></script>
+</body>
+</html>

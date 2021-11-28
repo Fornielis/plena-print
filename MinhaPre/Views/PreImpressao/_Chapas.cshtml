@@ -1,0 +1,33 @@
+﻿@model Chapa
+<section id="ChapasGravadas">
+    <div id="boxFormulario">
+        <section class="container animated bounceInLeft">
+            <div class="row">
+
+                <div class="col-xs-12">
+                    <h1><span class="icone-fonte"></span>Chapas | OS @Model.NumeroOS</h1>
+                    <a data-ajax="true" data-ajax-loading="#loader" data-ajax-mode="replace" data-ajax-update="#dados" href="~/PreImpressao/OsPorID?IdOS=@ViewBag.IdOS">
+                        <p id="FechaChapaGravada" class="icone-fonte"></p>
+                    </a>
+                </div>
+
+                <div id="RetonoListaChapasGravadas" style="border:none;">
+                    @Html.Partial("_ChapasLista")
+                </div>
+
+                <div>
+                    @Html.Partial("_ChapasNova")
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+    <section id="telaFundo"></section>
+    <script type="text/javascript">
+        mascarasTextos();
+        jQuery.validator.unobtrusive.parse();
+        jQuery.validator.unobtrusive.parse("#formChapasGravadas");
+        $('#FechaChapaGravada').on('click', FecharChapaGravada);
+    </script>
+</section>
